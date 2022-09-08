@@ -199,5 +199,9 @@ in master, ec2 instance execute below commands
 sudo –i
 
 ssh-keygen -t rsa
+# How to Create a Kubernetes Cluster With the AWS EKS CLI
+If you’re a developer, you’d typically want to deploy containerized applications to Kubernetes. But the question is, how? Why not give AWS EKS CLI a try?
+
+In this tutorial, you’ll learn how to set up AWS EKS CLI to create a Kubernetes cluster, so you can focus on your code instead of managing infrastructure.
 
 
