@@ -165,3 +165,39 @@ Verify plugin is successfully installed
 
 kubectl convert --help
 If you do not see an error, it means the plugin is successfully installed.
+
+installing ansible in ansible master instance
+run below commands as root user
+
+sudo -i
+
+apt-get update
+
+apt-get install software-properties-common
+
+apt-add-repository ppa:ansible/ansible
+
+apt-get update
+
+apt-get install ansible
+
+check ansible with
+
+ansible --version
+ansible 2.6.3
+config file = /etc/ansible/ansible.cfg
+configured module search path = [u'/root/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+ansible python module location = /usr/lib/python2.7/dist-packages/ansible
+executable location = /usr/bin/ansible
+python version = 2.7.12 (default, Dec 4 2017, 14:50:18) [GCC 5.4.0 20160609]
+establish ssh connection between ansible master and clients
+to establish a connection between master and clients we have to generate the id_rsa.pub key in master and paste this key in authorized_keys file of client machines. This file exists in the .ssh directory. So if the .ssh directory has not existed in client ec2 instances, We have to create the .ssh directory and inside that, we have to create the authorized_keys file.
+
+generating id_rsa.pub  public key in ansible master instance
+in master, ec2 instance execute below commands
+
+sudo –i
+
+ssh-keygen -t rsa
+
+
