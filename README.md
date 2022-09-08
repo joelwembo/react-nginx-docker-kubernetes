@@ -204,4 +204,13 @@ If you’re a developer, you’d typically want to deploy containerized applicat
 
 In this tutorial, you’ll learn how to set up AWS EKS CLI to create a Kubernetes cluster, so you can focus on your code instead of managing infrastructure.
 
+Prerequisite
+This tutorial will be a hands-on demonstration. If you’d like to follow along, be sure you have a PC and an AWS account. If you don’t have an AWS account, a free tier account is available.
+
+Creating an Admin User
+Before creating a Kubernetes cluster, you’ll create an admin user. An admin user lets you log in to the AWS console to configure your cluster. Kick off this tutorial by creating a user with administrator permissions via the AWS Console.
+
+1. Log into your AWS Console, and navigate to your IAM dashboard.
+
+Click on Users (left panel) —> Add Users (top-right) shown below to initialize adding users.
 
