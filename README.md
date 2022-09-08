@@ -1,4 +1,4 @@
-# Django-postgresql-react-kubernetes
+# Django postgresql react kubernetes setup
 Django postgresql react kubernetes
 
 Install and Set Up kubectl on Linux
