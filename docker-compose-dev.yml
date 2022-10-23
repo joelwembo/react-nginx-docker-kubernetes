@@ -1,0 +1,41 @@
+# version: '3.8'
+
+# services:
+
+#   frontend:
+#     container_name: fintechweb-v1
+#     image: fintechweb-v1
+#     build:
+#       context: .
+#       target: development
+#     volumes:
+#       - './:/app'
+#       - '/app/node_modules'
+#     ports:
+#       - 80:3000
+#     stdin_open: true
+#     environment:
+#       - CHOKIDAR_USEPOLLING=true
+#     command: npm start
+
+
+# PRODUCTION
+version: '3.8'
+
+services:
+
+  frontend:
+    container_name: fintechweb-v1
+    image: fintechweb-v1
+    build:
+      context: .
+      target: production
+    volumes:
+      - './:/app'
+      - '/app/node_modules'
+    ports:
+      - 3000:3000
+    stdin_open: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    command: npm start
