@@ -1,0 +1,42 @@
+Step 1
+
+docker build -f Dockerfile -t fintechweb-v1 .
+
+Step 2
+
+docker run -it -p 3000:3000 fintechweb-v1
+
+
+Using Docker Compose
+
+Option 1
+
+
+Production
+Step 1
+docker-compose -f docker-compose.yml build
+
+docker images
+Step 2
+
+docker rm fintechweb-v1 
+docker run -it --rm -p 80:80 --name fintechweb-v1 fintechweb-v1
+
+
+Docker Other Commands
+
+To clear containers:
+
+docker rm -f $(docker ps -a -q)
+
+To clear images:
+
+docker rmi -f $(docker images -a -q)
+
+To clear volumes:
+
+docker volume rm $(docker volume ls -q)
+
+To clear networks:
+
+docker network rm $(docker network ls | tail -n+2 | awk '{if($2 !~ /bridge|none|host/){ print $1 }}')
