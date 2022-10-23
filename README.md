@@ -1,4 +1,4 @@
-# Django postgresql react kubernetes setup
+# React NGINX Docker kubernetes setup
 Django postgresql react kubernetes
 
 Install and Set Up kubectl on Linux
