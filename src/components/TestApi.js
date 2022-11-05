@@ -3,16 +3,15 @@ import axios from "axios";
 
 const TestApi = () => {
     // get data from API
-    const [tickets, getTickets] = useState('');
-    let address = 'london'
-    const url = `http://127.0.0.1:8000/select_destination/${address}`;
+   
+    let address = 2
+    const url = `https://jsonplaceholder.typicode.com/todos/${address}`;
 
     const getAllTickets = () => {
         axios.get(`${url}`)
         .then((response) => {
-            const allTickets = response.data;
-            getTickets(allTickets)
-            console.log(allTickets)
+       
+            console.log(response)
             
         })
         .catch((error) => console.log(`Error: ${error}`));
@@ -25,13 +24,7 @@ const TestApi = () => {
     return (
       <>
          <ul>
-             { getAllTickets.map((amadeus) => 
-                  <li> 
-                        {                       
-                            amadeus.data.address                      
-                        }
-                   
-                   </li>)
+             { 
                    
               }
            </ul> 
