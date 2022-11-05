@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <TestApi />
+      <Home title="Home Page" />
     </>
   );
 }
