@@ -3,7 +3,5 @@ export default interface IRoute {
     exact: boolean;
     component: any;
     name: string;
-    props?: any;
     protected: boolean;
-
 }
