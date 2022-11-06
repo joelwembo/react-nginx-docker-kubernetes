@@ -89,3 +89,8 @@ docker volume rm $(docker volume ls -q)
 To clear networks:
 
 docker network rm $(docker network ls | tail -n+2 | awk '{if($2 !~ /bridge|none|host/){ print $1 }}')
+
+# Updated React Dom
+
+// "@types/react-dom": "^18.0.4",
+// "@types/react-router-dom": "^5.3.3",
