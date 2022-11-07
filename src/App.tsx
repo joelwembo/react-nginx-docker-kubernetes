@@ -1,6 +1,6 @@
 import React , { useEffect, useState }  from 'react';
-import Home from './pages/Home';
-import routes from './config/routes';
+// import Home from './pages/home';
+// import routes from './config/routes';
 
 function App() {
 
