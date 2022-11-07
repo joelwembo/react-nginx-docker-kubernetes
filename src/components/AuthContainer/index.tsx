@@ -3,11 +3,11 @@ import { Card, CardBody, CardHeader, Col, Container, Row } from 'reactstrap';
 
 export interface IAuthContainerProps {
     header: any;
-    children: any
+
 }
 
 const AuthContainer: React.FunctionComponent<IAuthContainerProps> = props => {
-    const { children, header } = props;
+    const {  header } = props;
 
     return (
         <Container>
@@ -23,7 +23,7 @@ const AuthContainer: React.FunctionComponent<IAuthContainerProps> = props => {
                             {header}
                         </CardHeader>
                         <CardBody>
-                            {children}
+                            {/* {children} */}
                         </CardBody>
                     </Card>
                 </Col>

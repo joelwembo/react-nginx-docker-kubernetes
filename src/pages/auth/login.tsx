@@ -52,7 +52,7 @@ const LoginPage: React.FunctionComponent<IPageProps> = props => {
     }
 
     return (
-        <AuthContainer header="Login">
+        <div>
             <FormGroup>
                 <Input 
                     type="email"
@@ -96,7 +96,7 @@ const LoginPage: React.FunctionComponent<IPageProps> = props => {
             >
                 <i className="fab fa-google mr-2"></i> Sign in with Google
             </Button>
-        </AuthContainer>
+        </div>
     );
 }
 

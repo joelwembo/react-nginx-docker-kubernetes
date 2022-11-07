@@ -43,7 +43,7 @@ const ChangePasswordPage: React.FunctionComponent<IPageProps> = props => {
         return <Redirect to="/" />;
 
     return (
-        <AuthContainer header="Change Password">
+        <div>
             <FormGroup>
                 <Input 
                     autoComplete="new-password"
@@ -86,7 +86,7 @@ const ChangePasswordPage: React.FunctionComponent<IPageProps> = props => {
                 Change Password
             </Button>
             <ErrorText error={error} />
-        </AuthContainer>
+        </div>
     );
 }
 

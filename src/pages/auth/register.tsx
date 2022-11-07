@@ -53,7 +53,7 @@ const RegisterPage: React.FunctionComponent<IPageProps> = props => {
     }
 
     return (
-        <AuthContainer header="Register">
+        <div >
             <FormGroup>
                 <Input 
                     type="email"
@@ -98,7 +98,7 @@ const RegisterPage: React.FunctionComponent<IPageProps> = props => {
                 <p className='m-1 text-center'>Already have an account? <Link to="/login">Login.</Link></p>
             </small>
             <ErrorText error={error} />
-        </AuthContainer>
+        </div>
     );
 }
 

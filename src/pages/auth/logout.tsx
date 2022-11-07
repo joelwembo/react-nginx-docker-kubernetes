@@ -16,13 +16,13 @@ const LogoutPage: React.FunctionComponent<IPageProps> = props => {
     }
 
     return (
-        <AuthContainer header="Logout">
+        <div>
             <p className='text-center'>Are you sure you want to logout?</p>
             <div className='text-center'>
                 <Button color="danger" className="mr-2" onClick={() => history.goBack()}>Cancel</Button>
                 <Button color="info" className="mr-2" onClick={() => Logout()}>Logout</Button>
             </div>
-        </AuthContainer>
+        </div>
     );
 }
 

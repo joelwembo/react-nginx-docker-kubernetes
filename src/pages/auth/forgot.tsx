@@ -31,7 +31,7 @@ const ForgotPasswordPage: React.FunctionComponent<IPageProps> = props => {
     }
 
     return (
-        <AuthContainer header="Send Password Reset">
+        <div>
             {sent ?
                 <p>A link has been sent to your email with instructions.</p>
             :
@@ -58,7 +58,7 @@ const ForgotPasswordPage: React.FunctionComponent<IPageProps> = props => {
                     <ErrorText error={error} />
                 </>
             }
-        </AuthContainer>
+        </div>
     );
 }
 
