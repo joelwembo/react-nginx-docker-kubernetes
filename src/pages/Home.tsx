@@ -743,4 +743,3 @@ const HomePage: React.FunctionComponent<IPageProps> = props => {
 }
 
 export default HomePage;
-
